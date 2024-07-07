@@ -1,58 +1,67 @@
 <!DOCTYPE HTML>
 <html lang="en">
-	<head>
-		<title>Andrés Occhipinti Liberman | contact</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
+    <head>
+        <title>Andrés Occhipinti Liberman | contact</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+        <div id="page-wrapper">
 
-			<!-- Header -->
-				<header id="header">
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">home</a></li>
-							<li><a href="publications.html">publications</a></li>
-							<li><a href="teaching.html">teaching</a></li>
-							<li><a href="activities.html">activities</a></li>
-							<li><a href="contact.html" class="button primary">contact</a></li>
+            <!-- Header -->
+            <header id="header">
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="publications.html">publications</a></li>
+                        <li><a href="teaching.html">teaching</a></li>
+                        <li><a href="activities.html">activities</a></li>
+                        <li><a href="contact.html" class="button primary">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-						</ul>
-					</nav>
-				</header>
+            <!-- Main -->
+            <div id="main" class="wrapper style1">
+                <div class="container">
+                    <!-- Text -->
+                    <section>
+                        <h1>Contact</h1>
+                        <p>Email: <span id="email"></span></p>
+                        <hr>
+                    </section>
+                </div>
+            </div>
 
-			<!-- Main -->
-				<div id="main" class="wrapper style1">
-					<div class="container">
-						<!-- Text -->
-							<section>
-								<h1>Contact</h1>
-									Email: <a href="javascript:location='mailto:aocchipintiliberman@gmail.com';void 0">aocchipintiliberman@gmail.com</a> <hr>
-								
-					</div>
-				</div>
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="copyright">
+                    <li>&copy; Andrés Occhipinti Liberman.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="copyright">
-						<li>&copy; Andrés Occhipinti Liberman.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
+        </div>
 
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                var user = "aocchipintiliberman";
+                var domain = "gmail.com";
+                var email = user + "@" + domain;
+                var emailLink = '<a href="mailto:' + email + '">' + email + '</a>';
+                document.getElementById('email').innerHTML = emailLink;
+            });
+        </script>
+    </body>
 </html>
